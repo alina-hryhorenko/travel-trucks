@@ -1,0 +1,89 @@
+.card {
+  display: flex;
+  gap: 24px;
+  border-radius: 20px;
+  background-color: var(--inputs);
+  padding: 16px;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.image {
+  height: 310px;
+  width: 290px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background-color: var(--badges);
+}
+
+.content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 16px;
+  padding-block: 8px;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.titleBlock {
+  height: 28px;
+  width: 50%;
+  border-radius: 4px;
+  background-color: var(--badges);
+}
+
+.priceBlock {
+  height: 28px;
+  width: 80px;
+  border-radius: 4px;
+  background-color: var(--badges);
+}
+
+.metaBlock {
+  height: 16px;
+  width: 33.3333%;
+  border-radius: 4px;
+  background-color: var(--badges);
+}
+
+.descLines {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.descLine {
+  height: 12px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: var(--badges);
+}
+
+.descLineShort {
+  height: 12px;
+  width: 66.6667%;
+  border-radius: 4px;
+  background-color: var(--badges);
+}
+
+.badgeRow {
+  display: flex;
+  gap: 8px;
+}
+
+.badgePlaceholder {
+  height: 36px;
+  width: 80px;
+  border-radius: 9999px;
+  background-color: var(--badges);
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,155 @@
+.form {
+  display: flex;
+  width: 360px;
+  flex-shrink: 0;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: var(--inputs);
+  padding: 24px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.fieldLabel {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--gray);
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gray);
+  pointer-events: none;
+}
+
+.inputIconFilled {
+  color: var(--main);
+}
+
+.locationInput {
+  height: 56px;
+  width: 100%;
+  border-radius: 12px;
+  background-color: var(--white);
+  padding-left: 44px;
+  padding-right: 16px;
+  color: var(--gray);
+  outline: none;
+}
+
+.locationInput::placeholder {
+  color: var(--gray);
+}
+
+.locationInputFilled {
+  color: var(--main);
+}
+
+.filtersTitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--main);
+  margin-bottom: 24px;
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.radioLegend {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--gray);
+}
+
+.radioLabel {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: var(--main);
+}
+
+.radioInput {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  flex-shrink: 0;
+  margin: 0;
+  border-radius: 9999px;
+  border: 1px solid var(--text);
+  position: relative;
+}
+
+.radioInput:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 13px;
+  width: 13px;
+  border-radius: 9999px;
+  background-color: var(--text);
+  transform: translate(-50%, -50%);
+}
+
+.searchButton {
+  height: 56px;
+  width: 100%;
+  border-radius: 200px;
+  padding: 16px 60px;
+  background-color: var(--grey-green);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--white);
+  margin-top: 24px;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.searchButton:hover {
+  background-color: var(--green-hover);
+}
+
+.clearButton {
+  display: flex;
+  height: 56px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 200px;
+  padding: 16px 32px;
+  border: 1px solid var(--gray-light);
+  background-color: var(--white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--main);
+  margin-top: 16px;
+  transition: border-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clearButton:hover {
+  border-color: var(--green-hover);
+}

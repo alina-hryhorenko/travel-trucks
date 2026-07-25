@@ -1,0 +1,65 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 16px;
+  background-color: var(--inputs);
+  padding: 24px;
+}
+
+.headerGroup {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--main);
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.ratingItem {
+  color: var(--main);
+}
+.ratingItem svg {
+  color: var(--rating);
+}
+
+.locationItem {
+  color: var(--main);
+}
+
+.reviewCount {
+  margin-left: 4px;
+}
+
+.price {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--main);
+}
+
+.description {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text);
+}

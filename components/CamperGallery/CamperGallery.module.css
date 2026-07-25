@@ -1,0 +1,49 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mainSwiper {
+  width: 638px;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: var(--inputs);
+}
+
+.mainSlideInner {
+  position: relative;
+  height: 505px;
+  width: 638px;
+}
+
+.mainImage {
+  object-fit: cover;
+}
+
+.thumbsSwiper {
+  width: 638px;
+}
+
+.thumbSlide {
+  width: 135px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 3px solid transparent;
+  transition: border-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.thumbSlide:global(.swiper-slide-thumb-active) {
+  border-color: var(--grey-green);
+}
+
+.thumbSlideInner {
+  position: relative;
+  height: 144px;
+  width: 135px;
+}
+
+.thumbImage {
+  object-fit: cover;
+}

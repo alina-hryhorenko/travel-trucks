@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  gap: 2px;
+}
+
+.filled {
+  color: var(--rating);
+}
+
+.empty {
+  color: var(--gray-light);
+}
