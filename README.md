@@ -97,6 +97,3 @@ travel-trucks/
 
 **Alina Hryhorenko** — GitHub: [@alina-hryhorenko](https://github.com/alina-hryhorenko)
 
-## 📄 Ліцензія
-
-Проєкт створено в навчальних цілях (GoIT).
