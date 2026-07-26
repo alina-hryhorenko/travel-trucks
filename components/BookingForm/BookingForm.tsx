@@ -6,6 +6,7 @@ import type { ChangeEventHandler, FocusEventHandler } from 'react';
 import toast from 'react-hot-toast';
 import { PiWarningCircle } from 'react-icons/pi';
 import * as Yup from 'yup';
+import { Loader } from '@/components/Loader/Loader';
 import { createBookingRequest } from '@/services/campers';
 import styles from './BookingForm.module.css';
 
@@ -123,6 +124,14 @@ export function BookingForm({ camperId, camperName }: { camperId: string; camper
         />
 
         <button type="submit" disabled={mutation.isPending} className={styles.submitButton}>
+          {mutation.isPending && (
+            <Loader
+              size={20}
+              label="Sending booking request"
+              trackColor="var(--gray-light)"
+              activeColor="var(--white)"
+            />
+          )}
           {mutation.isPending ? 'Sending...' : 'Send'}
         </button>
       </form>

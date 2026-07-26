@@ -3,6 +3,27 @@
   gap: 2px;
 }
 
+.starWrapper {
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+.starWrapper svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.starFillClip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  display: inline-flex;
+}
+
 .filled {
   color: var(--rating);
 }

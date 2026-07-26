@@ -107,3 +107,20 @@
 .showMore:hover {
   background-color: var(--green-hover);
 }
+
+.card {
+  display: flex;
+  gap: 24px;
+  border-radius: 16px;
+  background-color: var(--inputs);
+  padding: 24px;
+  min-width: 0;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
