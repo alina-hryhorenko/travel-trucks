@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { CamperCard } from '@/components/CamperCard/CamperCard';
 import { CamperCardSkeleton } from '@/components/CamperCardSkeleton/CamperCardSkeleton';
 import { EmptyCatalogState } from '@/components/EmptyCatalogState/EmptyCatalogState';
+import { Loader } from '@/components/Loader/Loader';
 import { useCampersInfinite } from '@/hooks/useCampersInfinite';
 import type { CamperFilters } from '@/types/camper';
 import styles from './CamperList.module.css';
@@ -58,7 +59,15 @@ export function CamperList({ filters, onClearFilters, onFilteringChange }: Campe
           disabled={isFetchingNextPage}
           className={styles.loadMore}
         >
-          {isFetchingNextPage ? 'Loading...' : 'Load more'}
+          {isFetchingNextPage && (
+            <Loader
+              size={20}
+              label="Loading more campers"
+              trackColor="var(--gray-light)"
+              activeColor="var(--green-hover)"
+            />
+          )}
+          Load more
         </button>
       )}
     </div>
